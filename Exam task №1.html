@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam task number one</title>
+</head>
+
+<body>
+
+<script>
+    let myRandom = (a, b) =>
+    {
+    return Math.round(Math.random() * (b - a) + a)
+    }
+    setInterval( () =>
+    {
+    document.body.style.backgroundColor = `rgb(${myRandom(0, 255)}, ${myRandom(0, 255)}, ${myRandom(0, 255)})`
+    }, 300)
+</script>
+
+</body>
+</html>
